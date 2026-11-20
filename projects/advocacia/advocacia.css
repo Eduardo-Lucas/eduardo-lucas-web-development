@@ -1,0 +1,140 @@
+/* Almeida Advocacia — identidade: sobriedade, serifa clássica, bege, azul-petróleo e bronze */
+:root{--al-bg:#f4f1ea;--al-paper:#eeeae2;--al-ink:#273b4b;--al-bronze:#9a744d;--al-bronze2:#b8946b;--al-text:#33424d;--al-muted:#6c767d;--al-line:#ddd6c9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body.al{margin:0;background:var(--al-bg);color:var(--al-text);font:400 16px/1.75 "DM Sans",sans-serif}
+.al a{color:inherit;text-decoration:none}
+.al h1,.al h2,.al h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;color:var(--al-ink);margin:0}
+.al h1 em,.al h2 em{color:var(--al-bronze);font-weight:500}
+.al-container{width:min(1140px,calc(100% - 48px));margin:auto}
+.al-eyebrow{display:block;font:700 11px Manrope;letter-spacing:3px;color:var(--al-bronze);margin-bottom:18px}
+.al-lead{font-size:18px;color:var(--al-muted);max-width:540px}
+.icon{width:22px;height:22px}
+
+/* Cabeçalho */
+.al-header{position:sticky;top:0;z-index:40;background:rgba(244,241,234,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--al-line)}
+.al-nav{height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.al-logo{font:800 13px/1.25 Manrope;letter-spacing:3px;color:var(--al-ink)}
+.al-logo span{display:block;font-weight:500;font-size:10px;letter-spacing:5px;color:var(--al-bronze)}
+.al-links{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:500;color:var(--al-muted)}
+.al-links a:hover{color:var(--al-ink)}
+.al-menu{display:none;width:44px;height:44px;border:1px solid var(--al-line);border-radius:4px;background:transparent;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.al-menu span{width:18px;height:1.5px;background:var(--al-ink)}
+
+/* Botões */
+.al-btn{display:inline-flex;align-items:center;justify-content:center;padding:16px 26px;border:0;border-radius:2px;background:var(--al-ink);color:#fff!important;font:700 13px Manrope;letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:background .2s}
+.al-btn:hover{background:var(--al-bronze)}
+.al-btn-sm{padding:11px 18px;font-size:11px}
+.al-link{font-weight:700;font-size:14px;color:var(--al-ink);border-bottom:1px solid var(--al-bronze2);padding-bottom:2px}
+.al-actions{display:flex;align-items:center;gap:30px;margin-top:38px;flex-wrap:wrap}
+
+/* Hero */
+.al-hero{padding:100px 0 110px;border-bottom:1px solid var(--al-line)}
+.al-hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:70px;align-items:center}
+.al-hero h1{font-size:clamp(46px,6.4vw,84px);line-height:1.02;letter-spacing:-1.5px;margin-bottom:26px}
+.al-hero-panel{position:relative;background:var(--al-ink);color:#dfe5ea;padding:46px 36px 38px;border-radius:2px}
+.al-hero-panel::before{content:"";position:absolute;inset:12px;border:1px solid #ffffff22;pointer-events:none}
+.al-monogram{font:500 120px/1 "Cormorant Garamond",serif;color:var(--al-bronze2);margin-bottom:22px}
+.al-hero-panel ul{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.al-hero-panel li{display:flex;gap:12px;align-items:flex-start;font-size:14px}
+.al-hero-panel .icon{width:18px;height:18px;color:var(--al-bronze2);flex-shrink:0;margin-top:3px}
+
+/* Seções */
+.al-section{padding:110px 0}
+.al-head{margin-bottom:50px}
+.al-head h2,.al-about h2,.al-contact h2{font-size:clamp(36px,4.6vw,58px);line-height:1.05}
+
+/* Áreas */
+.al-areas{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--al-line);border-left:1px solid var(--al-line)}
+.al-area{position:relative;padding:38px 30px 42px;border-right:1px solid var(--al-line);border-bottom:1px solid var(--al-line);background:var(--al-bg);transition:background .3s}
+.al-area:hover{background:#fff}
+.al-area .icon{width:30px;height:30px;color:var(--al-bronze)}
+.al-num{position:absolute;right:24px;top:28px;font:700 11px Manrope;color:#b3aa9a}
+.al-area h3{font-size:28px;margin:26px 0 10px}
+.al-area p{margin:0;font-size:14px;color:var(--al-muted)}
+
+/* Sobre */
+.al-about{background:var(--al-paper)}
+.al-about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:center}
+.al-about p{color:var(--al-muted);max-width:560px}
+.al-about h2{margin-bottom:24px}
+.al-portrait{margin:0}
+.al-portrait-art{aspect-ratio:4/5;display:grid;place-items:center;background:linear-gradient(160deg,#3a5163,#273b4b 60%,#1e2e3b);position:relative;overflow:hidden}
+.al-portrait-art::after{content:"";position:absolute;width:70%;aspect-ratio:1;border-radius:50%;border:1px solid #ffffff1f;box-shadow:0 0 0 40px #ffffff08}
+.al-portrait-art span{font:500 96px "Cormorant Garamond",serif;color:var(--al-bronze2);position:relative;z-index:1}
+.al-portrait figcaption{padding-top:16px;font-size:14px;color:var(--al-muted)}
+.al-portrait strong{display:block;font:600 24px "Cormorant Garamond",serif;color:var(--al-ink)}
+.al-creds{list-style:none;padding:0;margin:30px 0 0;border-top:1px solid var(--al-line)}
+.al-creds li{padding:14px 0 14px 28px;border-bottom:1px solid var(--al-line);position:relative;font-size:15px}
+.al-creds li::before{content:"§";position:absolute;left:0;color:var(--al-bronze);font-family:"Cormorant Garamond",serif;font-size:20px;line-height:1.2}
+
+/* Etapas */
+.al-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.al-steps li{border-top:2px solid var(--al-ink);padding-top:28px}
+.al-step{font:500 54px/1 "Cormorant Garamond",serif;color:var(--al-bronze)}
+.al-steps h3{font-size:28px;margin:18px 0 8px}
+.al-steps p{margin:0;color:var(--al-muted);font-size:15px}
+
+/* FAQ */
+.al-faq-section{background:#fff}
+.al-faq-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px;align-items:start}
+.al-faq details{border-bottom:1px solid var(--al-line)}
+.al-faq details:first-child{border-top:1px solid var(--al-line)}
+.al-faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;cursor:pointer;font:600 23px "Cormorant Garamond",serif;color:var(--al-ink)}
+.al-faq summary::-webkit-details-marker{display:none}
+.al-plus{position:relative;width:16px;height:16px;flex-shrink:0}
+.al-plus::before,.al-plus::after{content:"";position:absolute;left:0;top:7px;width:16px;height:1.5px;background:var(--al-bronze);transition:transform .25s}
+.al-plus::after{transform:rotate(90deg)}
+.al-faq details[open] .al-plus::after{transform:rotate(0)}
+.al-faq details p{margin:0 0 26px;color:var(--al-muted);max-width:620px}
+
+/* Contato */
+.al-contact{background:var(--al-ink);color:#cfd8df}
+.al-contact h2{color:#fff;margin-bottom:20px}
+.al-contact h2 em{color:var(--al-bronze2)}
+.al-contact .al-eyebrow{color:var(--al-bronze2)}
+.al-contact .al-lead{color:#b9c5ce}
+.al-contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.al-info{list-style:none;padding:0;margin:30px 0;display:grid;gap:14px;font-size:15px}
+.al-info li{display:flex;gap:14px;align-items:flex-start}
+.al-info .icon{color:var(--al-bronze2);flex-shrink:0;margin-top:2px}
+.al-map{width:100%;height:220px;border:0;filter:grayscale(1) contrast(.95);background:#324859}
+.al-form{background:var(--al-bg);color:var(--al-text);padding:40px}
+.al-form label{display:block;font:700 11px Manrope;letter-spacing:1.5px;text-transform:uppercase;color:var(--al-ink);margin-bottom:20px}
+.al-form input,.al-form select,.al-form textarea{display:block;width:100%;margin-top:8px;padding:13px 0;border:0;border-bottom:1px solid #c9c0b0;background:transparent;font:400 16px "DM Sans",sans-serif;color:var(--al-text);text-transform:none;letter-spacing:0}
+.al-form input:focus,.al-form select:focus,.al-form textarea:focus{outline:none;border-bottom-color:var(--al-bronze)}
+.al-form textarea{resize:vertical}
+.al-form .al-btn{width:100%;margin-top:8px}
+.al-form small{display:block;margin-top:14px;font-size:12px;color:var(--al-muted)}
+.al-form [data-demo-form-msg]{color:var(--al-bronze)}
+
+/* Rodapé */
+.al-footer{background:#1c2b37;color:#9fadb8;padding:40px 0;font-size:12px}
+.al-footer .al-logo{color:#fff}
+.al-footer-inner{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+.al-footer p{margin:0}
+
+/* Responsivo */
+@media(max-width:1000px){
+  .al-areas{grid-template-columns:repeat(2,1fr)}
+  .al-hero-grid,.al-about-grid,.al-faq-grid,.al-contact-grid{grid-template-columns:1fr;gap:50px}
+  .al-hero-panel{max-width:460px}
+  .al-portrait{max-width:380px}
+}
+@media(max-width:860px){
+  .al-menu{display:flex}
+  .al-links{display:none;position:absolute;top:80px;left:0;right:0;flex-direction:column;align-items:stretch;gap:4px;padding:16px 24px 24px;background:var(--al-bg);border-bottom:1px solid var(--al-line)}
+  .al-links.open{display:flex}
+  .al-links a{padding:10px 0}
+  .al-links .al-btn{margin-top:8px}
+}
+@media(max-width:600px){
+  .al-container{width:calc(100% - 32px)}
+  .al-hero{padding:64px 0 72px}
+  .al-section{padding:76px 0}
+  .al-areas,.al-steps{grid-template-columns:1fr}
+  .al-steps{gap:34px}
+  .al-faq summary{font-size:20px}
+  .al-form{padding:28px 22px}
+  .al-footer-inner{flex-direction:column;align-items:flex-start}
+}

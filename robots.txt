@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /projects/
+Sitemap: https://web.eduardo-lucas-dev.com/sitemap.xml
