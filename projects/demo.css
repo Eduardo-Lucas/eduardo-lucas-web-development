@@ -6,7 +6,7 @@
 .demo-bar a:hover{color:#fff}
 .demo-lang{border:1px solid #33435e;background:transparent;color:#fff;border-radius:6px;padding:4px 9px;font:700 11px "DM Sans",sans-serif;cursor:pointer}
 .demo-lang:hover{border-color:#a9d9e8}
-.demo-float{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;align-items:center;gap:10px;padding:12px 18px 12px 14px;border-radius:999px;background:#25d366;color:#fff;font:700 13px "DM Sans",sans-serif;text-decoration:none;box-shadow:0 12px 30px #0b162a40;transition:transform .2s}
+.demo-float{position:fixed;right:20px;bottom:84px;z-index:60;display:flex;align-items:center;gap:10px;padding:12px 18px 12px 14px;border-radius:999px;background:#25d366;color:#fff;font:700 13px "DM Sans",sans-serif;text-decoration:none;box-shadow:0 12px 30px #0b162a40;transition:transform .2s}
 .demo-float:hover{transform:translateY(-2px)}
 .demo-float svg{width:24px;height:24px}
 .demo-tag{display:inline-block;font:600 10px "DM Sans",sans-serif;letter-spacing:.5px;text-transform:uppercase;opacity:.7}
