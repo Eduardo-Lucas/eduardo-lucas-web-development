@@ -16,3 +16,8 @@
 :focus-visible{outline:2px solid #4169e1;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 /* O selo "Powered by Netlify" ocupa o canto inferior direito (≈194×64 px); os botões flutuantes ficam acima dele. */
+/* Página "Indique e ganhe" */
+.ref-hero{min-height:0;padding:100px 0 110px}.ref-hero .hero-lead{max-width:560px}
+.rules-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.rules-grid li{display:grid;grid-template-columns:40px 1fr;gap:12px;border:1px solid var(--line);border-radius:12px;padding:24px 26px}.rules-grid span{font:700 11px Manrope;color:var(--blue);padding-top:3px}.rules-grid p{margin:0;font-size:14px;line-height:1.7}
+.ref-cta-title{font-size:clamp(34px,4.5vw,52px);line-height:1.18;letter-spacing:-2px;margin:18px 0}.ref-cta-title em{color:#a9d9e8}.ref-cta-text{color:#bdc8d8;font-size:13px;line-height:1.9;max-width:460px;margin-bottom:28px}.contact-section .button svg{width:18px;height:18px}
+@media(max-width:650px){.ref-hero{padding:65px 0 75px}.rules-grid{grid-template-columns:1fr}.rules-grid li{padding:20px}.ref-cta-title{font-size:34px}}
